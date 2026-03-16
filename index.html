@@ -1,303 +1,190 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="portfolio" />
-    <meta property="og:url" content="" />
-    <meta property="og:title" content="portfolio" />
-    <meta property="og:description" content="portfolio" />
-    <meta property="og:image" content="" />
-    <meta property="og:type" content="website" />
-
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosanskr.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-</head>
-
-<body>
-    <div class="container resume">
-        <!-- Profile Start -->
-        <div class="row mt-5">
-            <div class="col-md-3 col-sm-12 pb-3 text-md-right text-center">
-                <img class="img-fluid rounded profile-img" src="./images/profile_test.jpg" alt="Profile">
-            </div>
-            <div class="col-md-9 col-sm-12">
-                <div class="row">
-                    <div class="col text-center text-md-left">
-                        <h1 class="blue">좌진우</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col pt-3">
-                        <div class="row pb-2">
-                            <div class="col-1 text-right">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-auto">
-                                <a href="mailto:jjw6654@gmail.com" target="_blank">jjw6654@gmail.com</a>
-                            </div>
-                        </div>
-                        <div class="row pb-2">
-                            <div class="col-1 text-right">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-auto">
-                                <span class="badge badge-light"></span>
-                            </div>
-                        </div>
-                        <div class="row pb-2">
-                            <div class="col-1 text-right">
-                                <i class="fa fa-github" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-auto">
-                                <a href="https://github.com/jinwoojwa" target="_blank">https://github.com/jinwoojwa</a>
-                            </div>
-                        </div>
-                        <div class="row pb-2">
-                            <div class="col-1 text-right">
-                                <i class="fa fa-globe" aria-hidden="true"></i>
-                            </div>
-                            <div class="col-auto">
-                                <a href="https://jinwoojwa.github.io" target="_blank">https://jinwoojwa.github.io</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="profile">
+        <div class="profile-img">
+          <img src="https://via.placeholder.com/150" alt="프로필 사진" />
         </div>
-        <!-- Profile End -->
-
-        <!-- Introduce Start -->
-        <div class="row pt-5">
-            <div class="col-12 col-md-3">
-                <h2 class="blue">INTRODUCE</h2>
-            </div>
-            <div class="col-12 col-md-9">
-                안정적이고 확장 가능한 시스템을 구축하기 위해 노력합니다.
-            </div>
+        <div class="profile-info">
+          <h1>좌진우 (JWA JINWOO)</h1>
+          <p>
+            <i class="fas fa-envelope fa-fw"></i>
+            <a href="mailto:email@example.com">jjw6654@gmail.com</a>
+          </p>
+          <p>
+            <i class="fab fa-github fa-fw"></i>
+            <a href="https://github.com/myName" target="_blank"
+              >https://github.com/jinwoojwa</a
+            >
+          </p>
+          <p>
+            <i class="fas fa-b fa-fw"></i>
+            <a href="https://myName.github.io" target="_blank"
+              >https://jinwoojwa.github.io/#/</a
+            >
+          </p>
         </div>
-        <!-- Introduce End -->
+      </header>
 
-        <!-- Skill Start -->
-        <div class="row pt-5">
-            <div class="col">
-                <div class="row pb-3">
-                    <div class="col">
-                        <h2><span class="blue">SKILL</span></h2>
-                    </div>
-                </div>
+      <hr />
 
-                <!-- Languages -->
-                <div class="row">
-                    <div class="col-12 col-md-3 text-md-right">
-                        <h4 class="gray">Languages</h4>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <div class="row">
-                            <div class="col-4 mb-2">Java</div>
-                        </div>
-                    </div>
-                </div>
+      <section class="about">
+        <h2>짧은 소개</h2>
+        <p>
+          단순한 기능 구현을 넘어, 신뢰할 수 있고 확장 가능한 시스템을 구축하는
+          것이 중요하다고 생각합니다. <br />
+          서비스를 직접 개발하고 운영해 본 경험이 있으며, 그 과정에서 여러
+          문제들에 직면하고 해결하며 역량을 길렀습니다.
 
-                <hr />
+          <br /><br />
 
-                <!-- Frameworks & Libraries -->
-                <div class="row">
-                    <div class="col-12 col-md-3 text-md-right">
-                        <h4 class="gray">Frameworks & Libraries</h4>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <div class="row">
-                            <div class="col-4 mb-2">Spring Boot</div>
-                        </div>
-                    </div>
-                </div>
+          효율적인 협업의 핵심은 명확한 소통에 있다고 믿으며, 이를 위해 모든
+          개발 과정을 꼼꼼히 기록하고 문서화하는 것을 습관화하고 있습니다.
+          철저한 문서화는 개발 과정의 잡음을 줄이고, 팀 전체의 생산성과 서비스의
+          완성도를 높일 수 있다고 생각합니다.
 
-                <hr />
+          <br /><br />
 
-                <!-- Infrastructure & Databases -->
-                <div class="row">
-                    <div class="col-12 col-md-3 text-md-right">
-                        <h4 class="gray">Infrastructure & Databases</h4>
-                    </div>
-                    <div class="col-12 col-md-9">
-                        <div class="row">
-                            <div class="col-4 mb-2">AWS</div>
-                            <div class="col-4 mb-2">MySQL</div>
-                        </div>
-                    </div>
-                </div>
+          이러한 가치들을 기술적으로 뒷받침하기 위해 Java와 Spring Boot의 내부
+          동작 원리를 깊이 있게 학습하며 기본기를 탄탄히 다지고 있습니다.
+          성실함과 집요함으로 변화에 유연하고 안정적인 백엔드 환경을 만드는
+          개발자가 되기 위해 노력하고 있습니다.
+        </p>
+      </section>
 
+      <section class="stacks">
+        <h2>기술 스택</h2>
+
+        <div class="stack-container">
+          <div class="stack-category">
+            <h3>Languages</h3>
+            <div class="stack-list">
+              <span>Java</span>
+              <span>JavaScript</span>
             </div>
-        </div>
-        <!-- Skill End -->
+          </div>
 
-        <!-- Experience Start -->
-        <div class="row pt-5">
-            <div class="col">
-                <div class="row pb-3">
-                    <div class="col">
-                        <h2 class="blue">EXPERIENCE</h2>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-md-3 col-12 text-md-right">
-                        <div class="row">
-                            <div class="col-md-12 col">
-                                <h4 class="gray">2025. 04 ~ 2025. 11<br /></h4>
-                            </div>
-                            <div class="col-md-12 col-3 text-center text-md-right">
-                                <span class="badge badge-info">8개월</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-9 col-12">
-                        <h4>카카오테크캠퍼스 3기 수료</h4>
-                        <i class="gray">카카오테크캠퍼스 3기 - Backend 트랙</i>
-                    </div>
-                </div>
-
-                <hr />
-
+          <div class="stack-category">
+            <h3>Framework & Libraries</h3>
+            <div class="stack-list">
+              <span>Spring Boot</span>
+              <span>Vue.js</span>
             </div>
-        </div>
-        <!-- Experience End -->
+          </div>
 
-        <!-- Project Start -->
-        <div class="row pt-5">
-            <div class="col">
-                <div class="row pb-3">
-                    <div class="col">
-                        <h2 class="blue">PROJECTS</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">
-
-                        <div class="row">
-                            <div class="col-md-3 col-12 text-md-right">
-                                <h4 class="gray">2025.08 ~ 2025.11</h4>
-                            </div>
-                            <div class="col-md-9 col-12">
-                                <h4>전국 대학 정보 플랫폼 - UniScope</h4>
-                                <i class="gray">카카오테크캠퍼스에서 진행한 프로젝트</i>
-                                <div>
-                                    <span class="badge badge-secondary">Java</span>
-                                    <span class="badge badge-secondary">Spring boot</span>
-                                    <span class="badge badge-secondary">Spring Security</span>
-                                    <span class="badge badge-secondary">Spring Data JPA</span>
-                                    <span class="badge badge-secondary">H2 Database</span>
-                                    <span class="badge badge-secondary">MySQL</span>
-                                    <span class="badge badge-secondary">JWT</span>
-                                    <span class="badge badge-secondary">AWS EC2 (Server Hosting)</span>
-                                </div>
-                                <ul class="pt-3">
-                                    <li>
-                                        <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
-                                            width="24" />
-                                        <a href="https://github.com/kakao-tech-campus-3rd-step3/Team21_BE">GitHub
-                                            repo</a>
-                                    </li>
-                                    <li><strong>역할: </strong>팀장 및 리뷰, 교수 도메인에 대한 API 개발</li>
-                                    <li>
-                                        <strong>API 문서화:</strong> Swagger(OpenAPI)를 활용하여 REST API 명세를 자동화하고,
-                                        프론트엔드 및 팀원과의 협업 시 API 사용 방법을 공유
-                                    </li>
-                                    <li>
-                                        <strong>인프라 구성:</strong> AWS EC2를 활용해 백엔드 애플리케이션을 배포하고,
-                                        실제 운영 환경을 고려한 서버 실행 및 관리 경험
-                                    </li>
-                                    <li>
-                                        <strong>프로젝트 관리:</strong> GitHub Issue를 활용하여 기능 단위로 작업을 분리하고,
-                                        이슈 기반 커뮤니케이션을 통해 진행 상황과 작업 내용을 체계적으로 관리
-                                    </li>
-                                    <li>
-                                        <strong>느낀점:</strong> 팀장 역할을 수행하며 단순히 기능 구현뿐 아니라, 일정 관리와 코드 품질, 팀원 간 커뮤니케이션의
-                                        중요성을 체감하게 됨. 이후 프로젝트에서는 초기 설계와 문서화를 더욱 신경쓰게 됨.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <hr />
-                    </div>
-                </div>
-                <!-- Project End -->
-
-                <!-- Education Start -->
-                <div class="row pt-5">
-                    <div class="col">
-                        <div class="row pb-3">
-                            <div class="col">
-                                <h2 class="blue">EDUCATION</h2>
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col">
-
-                                <div class="row">
-                                    <div class="col-md-3 col-12 text-md-right">
-                                        <h4 class="gray">2020. 03 ~ 2026. 02</h4>
-                                    </div>
-                                    <div class="col-md-9 col-12">
-                                        <h4>충남대학교</h4>
-                                        <i class="gray">컴퓨터융합학부 졸업</i>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Education End -->
-
-                <!-- Etc Start -->
-                <div class="row pt-5">
-                    <div class="col">
-                        <div class="row pb-3">
-                            <div class="col">
-                                <h2 class="blue">ETC</h2>
-                            </div>
-                        </div>
-                        <hr />
-                        <div class="row">
-                            <div class="col-md-3 col-12 text-md-right">
-                                <h4 class="gray">2024. 06</h4>
-                            </div>
-                            <div class="col-md-9 col-12">
-                                <h4>제53회 SQL 개발자(SQLD)</h4>
-                                <i class="gray">SQL Developer</i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+          <div class="stack-category">
+            <h3>Infrastructure & DB</h3>
+            <div class="stack-list">
+              <span>MySQL</span>
+              <span>GitHub Actions (CI/CD)</span>
             </div>
+          </div>
         </div>
-        <!-- Etc End -->
+      </section>
 
-        <!-- Footer Start -->
-        <div class="row">
-            <div class="col footer-cover">
-                <div class="footer text-center">
-                    <small>CSS by <a href="https://getbootstrap.com/" target="_blank">Bootstrap 4</a>. Thanks for <a
-                            href="https://blog.outsider.ne.kr/1234" target="_blank">Outsider</a></small><br />
-                    <small>Last Modified at 2024.10.22, <a
-                            href="https://github.com/KyeonghoYoo/portfolio/commits/master" target="_blank">Update Note.
-                        </a><a href="https://github.com/KyeonghoYoo/portfolio" target="_blank"><i
-                                class="fa fa-github"></i> Github</a></small>
-                </div>
-            </div>
+      <section class="projects">
+        <h2>프로젝트</h2>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-date">2025.08 ~ 2025.11</span>
+            <h3 class="project-title">전국 대학 정보 플랫폼 - UniScope</h3>
+            <p class="project-subtitle">카카오테크캠퍼스 진행 프로젝트</p>
+          </div>
+
+          <div class="project-tags">
+            <span>Java</span> <span>Spring Boot</span>
+            <span>Spring Security</span> <span>Spring Data JPA</span>
+            <span>MySQL</span> <span>JWT</span> <span>AWS EC2</span>
+          </div>
+
+          <div class="project-content">
+            <p class="repo-link">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/your-repo-link" target="_blank"
+                >GitHub Repo</a
+              >
+            </p>
+
+            <ul class="project-details">
+              <li>
+                <strong>Role:</strong> 팀장 역할 수행. 리뷰, 교수 도메인 API
+                개발 담당
+              </li>
+              <li>
+                <strong>API 문서화:</strong> Swagger(OpenAPI)를 활용한 REST API
+                명세 자동화로 팀원 간 협업 효율 극대화
+              </li>
+              <li>
+                <strong>인프라 구성:</strong> AWS EC2를 활용한 백엔드
+                애플리케이션 배포 및 실제 운영 환경 관리 경험
+              </li>
+              <li>
+                <strong>프로젝트 관리:</strong> GitHub Issue 기반의 작업 분리와
+                이슈 중심 커뮤니케이션으로 체계적인 일정 관리
+              </li>
+              <li>
+                <strong>느낀점:</strong> 팀장으로서 기능 구현을 넘어 일정 관리,
+                코드 품질, 소통의 중요성을 체감하며 초기 설계와 문서화의 가치를
+                학습함
+              </li>
+            </ul>
+          </div>
         </div>
-        <!-- Footer End -->
+      </section>
+
+      <section class="experience">
+        <h2>기타 경험</h2>
+        <div class="experience-content">
+          <ul class="project-details">
+            <li>
+              <strong>카카오테크캠퍼스 3기 수료</strong> (2025.04 - 2025.11)
+              <p class="experience-desc">
+                백엔드 트랙 이수 및 팀 프로젝트 진행
+              </p>
+            </li>
+            <li>
+              <strong>[KB] IT's Your Life 7기 진행 중</strong> (2026.03 - )
+              <p class="experience-desc">전공자 반 교육 이수 중</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="additional-info">
+        <h2>학력 & 자격 사항</h2>
+        <div class="details">
+          <div class="detail-group">
+            <h3>Certifications</h3>
+            <ul>
+              <li>제53회 SQL 개발자 (SQLD)</li>
+            </ul>
+          </div>
+
+          <div class="detail-group">
+            <h3>Education</h3>
+            <ul>
+              <li>
+                <strong>충남대학교</strong>
+                <p class="education-info">
+                  컴퓨터융합학부 졸업 (2020.03 - 2026.02)
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </div>
-</body>
-
+  </body>
 </html>
