@@ -30,8 +30,8 @@
           </p>
           <p>
             <i class="fas fa-b fa-fw"></i>
-            <a href="https://jinwoojwa.github.io/#/" target="_blank"
-              >https://jinwoojwa.github.io</a
+            <a href="https://icematcha.tistory.com/" target="_blank"
+              >https://icematcha.tistory.com</a
             >
           </p>
         </div>
@@ -42,23 +42,23 @@
       <section class="about">
         <h2>짧은 소개</h2>
         <p>
-          단순한 기능 구현을 넘어, 가독성이 좋고 유지보수가 용이하며 확장 가능한
-          시스템을 구축하는 것이 중요하다고 생각합니다. 서비스를 직접 개발하고
-          운영해 본 경험이 있으며, 그 과정에서 여러 문제들에 직면하고 해결하며
-          역량을 길렀습니다.
+          Java와 Spring Boot를 기반으로 확장성과 유지보수성을 고려한 시스템을
+          설계하고 개발하는 데 관심이 있습니다. 특히 마이크로서비스 아키텍처와
+          헥사고날 아키텍처를 학습하며, 변화에 유연하고 각 도메인의 책임이
+          명확한 시스템을 만드는 것을 고민하고 있습니다.
 
           <br /><br />
 
-          효율적인 협업의 핵심은 명확한 소통에 있다고 생각합니다 이를 위해 모든
-          개발 과정을 꼼꼼히 기록하고 문서화하는 것을 습관화하고 있습니다.
-          철저한 문서화는 개발 과정의 잡음을 줄이고, 팀 전체의 생산성과 서비스의
-          완성도를 높일 수 있다고 생각합니다.
+          좋은 개발은 혼자 잘 만드는 것에서 끝나지 않는다고 생각합니다. 원활한
+          협업을 위해 개발 과정과 설계 의도를 문서화하고, 테스트 코드를 통해
+          변경에 대한 안정성을 확보하는 것을 중요하게 생각합니다. 또한 서비스의
+          병목을 찾아 개선하고 불필요한 비용을 줄이는 성능 최적화에도 관심을
+          가지고 있습니다.
 
           <br /><br />
 
-          이러한 가치들을 기술적으로 뒷받침하기 위해 Java와 Spring Boot의 내부
-          동작 원리를 깊이 있게 학습하고 있으며 안정적이고 유연한 시스템을
-          만드는 개발자가 되고자 노력합니다.
+          기술을 단순히 적용하는 것보다 왜 필요한지 고민하고, 더 나은 구조와
+          개발 방법을 꾸준히 찾아가는 개발자가 되기 위해 노력하고 있습니다.
         </p>
       </section>
 
@@ -70,22 +70,32 @@
             <h3>Languages</h3>
             <div class="stack-list">
               <span>Java</span>
-              <span>JavaScript</span>
             </div>
           </div>
 
           <div class="stack-category">
-            <h3>Framework & Libraries</h3>
+            <h3>Framework &amp; Libraries</h3>
             <div class="stack-list">
               <span>Spring Boot</span>
+              <span>Spring Data JPA</span>
+              <span>Spring Security</span>
               <span>Vue.js</span>
             </div>
           </div>
 
           <div class="stack-category">
-            <h3>Infrastructure & DB</h3>
+            <h3>Database</h3>
             <div class="stack-list">
               <span>MySQL</span>
+              <span>Redis</span>
+              <span>MyBatis</span>
+            </div>
+          </div>
+
+          <div class="stack-category">
+            <h3>Infrastructure &amp; DevOps</h3>
+            <div class="stack-list">
+              <span>Docker</span>
               <span>GitHub Actions (CI/CD)</span>
             </div>
           </div>
@@ -94,6 +104,66 @@
 
       <section class="projects">
         <h2>프로젝트</h2>
+
+        <div class="project-card">
+          <div class="project-header">
+            <span class="project-date">2026.05 ~ 2026.07</span>
+            <h3 class="project-title">화장품 전용 창고관리시스템(WMS)</h3>
+            <p class="project-subtitle">개인 프로젝트</p>
+          </div>
+
+          <div class="project-tags">
+            <span>Java</span> <span>Spring Boot</span>
+            <span>Spring Data JPA</span> <span>Spring Security</span>
+            <span>MySQL</span> <span>Flyway</span> <span>k6</span>
+          </div>
+
+          <div class="project-content">
+            <p class="repo-link">
+              <i class="fab fa-github"></i>
+              <a
+                href="https://github.com/2026-KB-WMS/cosmetic-wms"
+                target="_blank"
+                >GitHub Repo</a
+              >
+            </p>
+
+            <ul class="project-details">
+              <li>
+                <strong>아키텍처 리팩토링을 통한 도메인 결합도 개선:</strong>
+                도메인 모델이 JPA 엔티티에 종속되고 서비스 간 직접 참조가
+                발생하던 계층형 구조를
+                <span class="highlight">헥사고날 아키텍처 + DDD</span>로 전환해
+                결합도를 낮췄습니다.
+              </li>
+              <li>
+                <strong>동시성 제어를 통한 재고 과할당 방지:</strong> 비관적
+                락과 ID 오름차순 락 획득 전략을 적용해, 다중 요청 환경에서
+                재고가 중복 할당되거나 갱신이 유실되는 문제를 제거했습니다.
+              </li>
+              <li>
+                <strong>부하 테스트 기반 동시성 결함 추적 및 해결:</strong>
+                k6로 동시 요청을 재현해 실패율 99%에 달하던
+                <span class="highlight">MySQL Deadlock</span>과 JPA 1차 캐시로
+                인한 Lost Update의 원인을 추적하여 해결했습니다.
+              </li>
+              <li>
+                <strong>가중치 기반 창고 자동 배정 알고리즘 설계:</strong>
+                재고 충족 여부·유통기한 임박도·이동 거리를 결합한 배정 정책과
+                1차 거리 필터링으로 외부 API 호출을 최소화하며 최적 창고를
+                자동으로 배정했습니다.
+              </li>
+            </ul>
+
+            <button
+              type="button"
+              class="detail-btn"
+              data-modal-target="modal-wms"
+            >
+              자세히 보기 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
 
         <div class="project-card">
           <div class="project-header">
@@ -136,7 +206,7 @@
               <li>
                 <strong>느낀점:</strong> 팀장으로서 기능 구현을 넘어 일정 관리,
                 코드 품질, 소통의 중요성을 체감하며 초기 설계와 문서화의 가치를
-                학습함
+                학습
               </li>
             </ul>
           </div>
@@ -148,14 +218,14 @@
         <div class="experience-content">
           <ul class="project-details">
             <li>
+              <strong>[KB] IT's Your Life 7기 수료</strong> (2026.03 - 2026.08)
+              <p class="experience-desc">전공자 반 교육 이수</p>
+            </li>
+            <li>
               <strong>카카오테크캠퍼스 3기 수료</strong> (2025.04 - 2025.11)
               <p class="experience-desc">
                 백엔드 트랙 이수 및 팀 프로젝트 진행
               </p>
-            </li>
-            <li>
-              <strong>[KB] IT's Your Life 7기 진행 중</strong> (2026.03 - )
-              <p class="experience-desc">전공자 반 교육 이수 중</p>
             </li>
           </ul>
         </div>
@@ -185,5 +255,133 @@
         </div>
       </section>
     </div>
+
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" role="dialog" aria-modal="true">
+        <button
+          type="button"
+          class="modal-close"
+          id="modal-close"
+          aria-label="닫기"
+        >
+          <i class="fas fa-xmark"></i>
+        </button>
+        <div class="modal-content" id="modal-content"></div>
+      </div>
+    </div>
+
+    <template id="modal-wms">
+      <div class="modal-head">
+        <p class="modal-eyebrow">개인 프로젝트</p>
+        <h3>화장품 전용 창고관리시스템 (WMS)</h3>
+        <p class="modal-period">2026.05.21 ~ 2026.07.08 (7주)</p>
+      </div>
+
+      <div class="modal-section">
+        <h4>개요</h4>
+        <p>
+          화장품 도메인 특유의 민감한 유통기한 관리와 품질 추적의 복잡성을
+          해결하기 위한 화장품 전용 창고 관리 시스템(WMS) 개발을 목표로
+          진행했습니다.
+        </p>
+        <p>
+          단순한 재고 수불 관리를 넘어, 제조 로트(Lot) 단위의 생애 주기를
+          추적하고 선유통기한 선출고(FEFO) 원칙을 시스템적으로 강제하여 물류
+          효율과 제품 안전성을 동시에 확보하기 위해 노력했습니다.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>아키텍처 전환</h4>
+        <p>
+          계층형 아키텍처(controller/service/repository)로 시작했으나, 도메인
+          모델이 JPA 엔티티에 종속되고 서비스가 다른 도메인을 직접 참조하는
+          문제가 드러나면서 도메인마다 adapter·application·domain 3계층을
+          반복하는
+          <strong>헥사고날 아키텍처(Ports &amp; Adapters) + DDD </strong>
+          구조로 단계적으로 전환했습니다.
+        </p>
+      </div>
+
+      <div class="modal-section">
+        <h4>트러블슈팅</h4>
+        <div class="mini-adr">
+          <p class="mini-adr-title">JPA 1차 캐시가 비관적 락을 무력화</p>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">현상</span>
+            <p>
+              입고 요청 50건을 동시에 보내는 부하 테스트를 실행했는데, 구역
+              용량을 초과하는 요청이 섞여 있었음에도 초과 예외가 한 건도
+              발생하지 않았습니다.
+            </p>
+          </div>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">원인</span>
+            <p>
+              같은 트랜잭션 안에서 조회로 먼저 1차 캐시에 올라간 엔티티가
+              있으면, 이후 <code>PESSIMISTIC_WRITE</code> 락 쿼리가 DB에는
+              최신값을 정상적으로 요청하면서도 Hibernate가 캐시에 남아있던
+              오래된 값을 그대로 돌려주는 것이 원인이었습니다. 락은 걸렸는데
+              실제로 읽히는 값은 예전 값이었던 셈입니다.
+            </p>
+          </div>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">해결</span>
+            <p>
+              락을 획득한 직후 <code>entityManager.refresh()</code>를 호출해
+              캐시를 DB 최신값으로 강제 갱신하도록 수정했습니다.
+            </p>
+          </div>
+        </div>
+        <div class="mini-adr">
+          <p class="mini-adr-title">k6 부하 테스트로 드러난 MySQL Deadlock</p>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">현상</span>
+            <p>
+              단건 API 테스트에서는 문제가 없었지만, k6로 동시 사용자 5명 수준의
+              부하를 주자 요청 실패율이 99%까지 치솟았습니다.
+            </p>
+          </div>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">원인</span>
+            <p>
+              저장할 때마다 기존 데이터를 지우고 전체를 다시 써넣는
+              구조(DELETE→INSERT)라, 여러 요청이 동시에 겹치면서 MySQL의 갭
+              락(gap lock)끼리 충돌해 교착 상태(Deadlock)가 발생했습니다.
+            </p>
+          </div>
+          <div class="mini-adr-row">
+            <span class="mini-adr-label">해결</span>
+            <p>
+              저장 로직을 전체 재생성 대신 변경된 부분만 반영하도록 고쳐
+              불필요한 DELETE→INSERT를 줄였습니다. 단건 테스트로는 드러나지 않던
+              결함이라, k6를 통해 실제 동시 부하 테스트를 수행했기에 확인할 수
+              있었던 문제였습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-section">
+        <h4>품질 · 검증</h4>
+        <ul class="dash-list">
+          <li>
+            TDD 기반으로 단위 테스트 348개 · 슬라이스 테스트 120개 · 통합 테스트
+            17개, 총 485개의 테스트를 작성해 도메인 로직부터 API 계약까지 전
+            계층을 검증
+          </li>
+          <li>
+            WebMvcTest + REST Docs로 컨트롤러 테스트를 작성해, 테스트가
+            통과해야만 API 문서 스니펫이 생성되도록 강제
+          </li>
+          <li>
+            k6로 입고 → 검사 → 재고 반영 전체 플로우를 시나리오화해, 처리량과
+            동시성 결함을 부하 테스트로 검증
+          </li>
+        </ul>
+      </div>
+    </template>
+
+    <script src="./script.js" defer></script>
   </body>
 </html>
