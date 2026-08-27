@@ -448,6 +448,10 @@ code {
   font-weight: 700;
 }
 
+.dash-list--sm li {
+  font-size: 0.85rem;
+}
+
 .mini-adr {
   background: #f8f9fa;
   border: 1px solid #eee;
