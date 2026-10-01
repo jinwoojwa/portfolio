@@ -565,3 +565,44 @@ code {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+/* Print (PDF export) */
+@media print {
+  html {
+    font-size: 82%;
+  }
+
+  body {
+    background: #fff;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 100%;
+    padding: 20px;
+    box-shadow: none;
+    border-radius: 0;
+  }
+
+  section {
+    margin-bottom: 28px;
+  }
+
+  .detail-btn {
+    display: none;
+  }
+
+  .modal-overlay {
+    display: none !important;
+  }
+
+  .project-card,
+  .detail-group,
+  .mini-adr {
+    break-inside: avoid;
+  }
+
+  .project-card:hover {
+    box-shadow: none;
+  }
+}
