@@ -115,26 +115,21 @@
 
             <ul class="project-details">
               <li>
-                <strong>OAuth 로그인 + 자산 연동 풀스택 구현:</strong>
-                <span class="highlight">카카오 OAuth+JWT 인증</span>(백엔드)부터
-                로그인→자산연동 온보딩 UI(프론트)까지 전 과정을 직접
-                구현했습니다.
+                <strong>OAuth 로그인 + 자산 연동 풀스택:</strong>
+                <span class="highlight">카카오 OAuth+JWT 인증</span>부터 온보딩
+                UI까지 직접 구현
               </li>
               <li>
-                <strong>쿼리 인덱스 최적화:</strong> 지역 조회 조건을 LIKE에서
-                IN으로 바꿔 인덱스 스캔 방식을 전환하고, 스캔 행수를
-                <span class="highlight">187만 → 42만 행</span>으로 줄였습니다.
+                <strong>쿼리 인덱스 최적화:</strong> LIKE → IN 전환으로 스캔
+                <span class="highlight">187만 → 42만 행</span>
               </li>
               <li>
-                <strong>캐싱 전략 재설계:</strong> 시뮬레이션 로직이 캐싱 없이
-                반복 계산되는 것을 재설계하여, 부하테스트 기준 API 처리량을
-                <span class="highlight">+30.8%</span> 개선했습니다.
+                <strong>캐싱 전략 재설계:</strong> API 처리량
+                <span class="highlight">+30.8%</span> 개선
               </li>
               <li>
-                <strong>순자산 예측 계산 오류 수정:</strong> 대출 상환액을
-                <span class="highlight">전체 상환기간 기준으로 전부 차감</span
-                >하던 계산 오류를 발견해, 목표 시점까지 도래한 상환분만
-                반영하도록 수정했습니다.
+                <strong>순자산 예측 오류 수정:</strong> 대출 상환액을
+                <span class="highlight">도래한 상환분만</span> 반영하도록 수정
               </li>
             </ul>
 
@@ -173,28 +168,22 @@
 
             <ul class="project-details">
               <li>
-                <strong>아키텍처 리팩토링을 통한 도메인 결합도 개선:</strong>
-                도메인 모델이 JPA 엔티티에 종속되고 서비스 간 직접 참조가
-                발생하던 계층형 구조를
-                <span class="highlight">헥사고날 아키텍처 + DDD</span>로 전환해
-                결합도를 낮췄습니다.
+                <strong>아키텍처 리팩토링:</strong>
+                <span class="highlight">헥사고날 아키텍처 + DDD</span> 전환으로
+                도메인 결합도 개선
               </li>
               <li>
-                <strong>동시성 제어를 통한 재고 과할당 방지:</strong> 비관적
-                락과 ID 오름차순 락 획득 전략을 적용해, 다중 요청 환경에서
-                재고가 중복 할당되거나 갱신이 유실되는 문제를 제거했습니다.
+                <strong>재고 동시성 제어:</strong> 비관적 락 + ID 오름차순 락
+                획득으로 과할당·갱신 유실 제거
               </li>
               <li>
-                <strong>부하 테스트 기반 동시성 결함 추적 및 해결:</strong>
-                k6로 동시 요청을 재현해 실패율 99%에 달하던
-                <span class="highlight">MySQL Deadlock</span>과 JPA 1차 캐시로
-                인한 Lost Update의 원인을 추적하여 해결했습니다.
+                <strong>부하 테스트 기반 결함 해결:</strong> k6로
+                <span class="highlight">MySQL Deadlock</span>, Lost Update 원인
+                추적 및 해결
               </li>
               <li>
-                <strong>가중치 기반 창고 자동 배정 알고리즘 설계:</strong>
-                재고 충족 여부·유통기한 임박도·이동 거리를 결합한 배정 정책과
-                1차 거리 필터링으로 외부 API 호출을 최소화하며 최적 창고를
-                자동으로 배정했습니다.
+                <strong>창고 자동 배정:</strong> 재고·유통기한·거리 가중치 기반
+                배정 알고리즘 설계
               </li>
             </ul>
 
@@ -230,26 +219,14 @@
             </p>
 
             <ul class="project-details">
+              <li><strong>Role:</strong> 팀장, 리뷰·교수 도메인 API 개발</li>
               <li>
-                <strong>Role:</strong> 팀장 역할 수행. 리뷰, 교수 도메인 API
-                개발 담당
+                <strong>API 문서화:</strong> Swagger(OpenAPI)로 명세 자동화
               </li>
+              <li><strong>인프라:</strong> AWS EC2 백엔드 배포 및 운영</li>
               <li>
-                <strong>API 문서화:</strong> Swagger(OpenAPI)를 활용한 REST API
-                명세 자동화로 팀원 간 협업 효율 극대화
-              </li>
-              <li>
-                <strong>인프라 구성:</strong> AWS EC2를 활용한 백엔드
-                애플리케이션 배포 및 실제 운영 환경 관리 경험
-              </li>
-              <li>
-                <strong>프로젝트 관리:</strong> GitHub Issue 기반의 작업 분리와
-                이슈 중심 커뮤니케이션으로 체계적인 일정 관리
-              </li>
-              <li>
-                <strong>느낀점:</strong> 팀장으로서 기능 구현을 넘어 일정 관리,
-                코드 품질, 소통의 중요성을 체감하며 초기 설계와 문서화의 가치를
-                학습
+                <strong>프로젝트 관리:</strong> GitHub Issue 기반 작업 분리와
+                일정 관리
               </li>
             </ul>
           </div>
